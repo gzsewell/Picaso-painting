@@ -1,0 +1,75 @@
+.parent {
+  display: grid;
+  margin: 0 auto;
+  width: 1000px;
+  grid-template-rows: 150px 300px 25px 600px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 8px;
+}
+.sky-1 {
+  background-color: cyan;
+}
+.sky-2 {
+  background-color: cyan;
+}
+.sky-3 {
+  background-color: cyan;
+}
+.sky-4 {
+  background-color: cyan;
+  grid-column: 1 / span 3;
+}
+.grass {
+  background-color: lightgreen;
+  grid-column: 1 / span 3;
+}
+/*Triangle*/
+
+.arrow-1 {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+
+  border-bottom: 100px solid green;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  margin-left: 100px;
+  margin-top: 100px;
+  z-index: 2;
+}
+.arrow-2 {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+
+  border-bottom: 100px solid green;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  margin-left: 500px;
+  margin-top: 100px;
+  z-index: 2;
+}
+.trunk-1 {
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 84px;
+  background-color: brown;
+  margin-left: 175px;
+  margin-top: 166px;
+  z-index: 1;
+}
+.trunk-2 {
+  display: flex;
+  position: absolute;
+  width: 40px;
+  height: 84px;
+  background-color: brown;
+  margin-left: 582px;
+  margin-top: 166px;
+  z-index: 1;
+}
